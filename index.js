@@ -64,7 +64,7 @@ function createRock(x) {
   return rock;
   }
   GAME.appendChild(rock);
-  window.requestAnimationFrame()
+  window.requestAnimationFrame(moveRock)
 return rock;
 }
   
