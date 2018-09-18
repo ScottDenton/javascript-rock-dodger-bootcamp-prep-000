@@ -52,7 +52,7 @@ function createRock(x) {
     }
     
    
-     if(checkCollision===true) {
+     if(checkCollision(rock)===true) {
        endGame();
      } else if(rock.style.top <= 380) {
        moveRock();
