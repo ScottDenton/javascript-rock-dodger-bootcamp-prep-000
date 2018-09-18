@@ -41,10 +41,31 @@ function createRock(x) {
   var rockTop = 0
 
   rock.style.top = rockTop;
+  function moveRock() {
+    // implement me!
+    // (use the comments below to guide you!)
+     
+      rock.style.top = `${top += 2}px`;
+      if (top <380){
+        windows.requestAnimationFrame(move)
+      
+    }
+    
+   
+     if(checkCollision===true) {
+       endGame();
+     } else if(rock.style.top <= 380) {
+       moveRock();
+     } 
+   
+   ROCKS.push(rock)
+
   
+  return rock;
+  }
   GAME.appendChild(rock);
   moveRock();
-
+return rock;
 }
   
 
