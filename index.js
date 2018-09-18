@@ -58,12 +58,11 @@ function createRock(x) {
        moveRock();
      } 
    
-   ROCKS.push(rock)
-
-  
+   
   return rock;
   }
   GAME.appendChild(rock);
+  ROCKS.push(rock)
   window.requestAnimationFrame(moveRock)
 return rock;
 }
